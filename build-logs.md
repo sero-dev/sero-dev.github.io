@@ -18,3 +18,4 @@ To Do:
 - Figure out how to use Storybook
 - Research LICENSE information
 - Fill out README.md with useful information
+- Add a tsconfig.json file
