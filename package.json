@@ -13,12 +13,20 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "license": "0BSD",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
     "gatsby-plugin-image": "^0.3.1",
     "gatsby-plugin-manifest": "^2.8.0",
@@ -31,10 +39,17 @@
     "gatsby-transformer-sharp": "^2.8.0",
     "postcss": "^8.1.14",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@storybook/addon-actions": "^6.1.10",
+    "@storybook/addon-essentials": "^6.1.10",
+    "@storybook/addon-links": "^6.1.10",
+    "@storybook/react": "^6.1.10",
+    "babel-loader": "^8.2.2",
     "gh-pages": "^3.1.0"
   }
 }
