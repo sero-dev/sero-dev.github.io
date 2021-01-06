@@ -1,0 +1,30 @@
+.job-list {
+    list-style: none;
+}
+
+.job-list-item {
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.job-list-item::selection {
+    background: none;
+    color: inherit;
+}
+
+.job-list-item:hover {
+    background: var(--dark-gray);
+}
+
+.job-list-item-active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.job-list-item-active:hover {
+    background: var(--primary);
+    color: var(--white);
+}
