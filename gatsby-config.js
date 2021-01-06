@@ -6,6 +6,8 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-typescript-css-modules",
+    "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -21,14 +23,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: `gatsby-plugin-typescript`,
-      options: {
-        isTSX: true,
-        jsxPragma: `jsx`,
-        allExtensions: true,
-      },
-    },
-  ],
+    }
+  ]
 };
