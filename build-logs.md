@@ -2,9 +2,9 @@
 
 ## Day 1
 Date: December 7, 2020
-- Build initial Gatsby project
-- Install Bootstrap and FontAwesome
-- Configure Typescript 
+- Built initial Gatsby project
+- Installed Bootstrap and FontAwesome
+- Configured Typescript 
 - Setup CI/CD for Github Pages
 - Setup Storybook for isolated UI Testing
 
@@ -19,3 +19,10 @@ To Do:
 - Research LICENSE information
 - Fill out README.md with useful information
 - Add a tsconfig.json file
+
+## Christmas Break
+Date(s): December 12 - January 5
+- Configured React Helmet plugin
+- Add font awesome plugin
+- Add Navigation Bar, Hero, About, Experience components
+- Established a color scheme
