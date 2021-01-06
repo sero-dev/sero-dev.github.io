@@ -28,6 +28,7 @@
     "@mdx-js/react": "^1.6.22",
     "bootstrap": "^4.5.3",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-image": "^0.3.1",
     "gatsby-plugin-manifest": "^2.8.0",
     "gatsby-plugin-mdx": "^1.6.0",
@@ -35,11 +36,13 @@
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-plugin-sitemap": "^2.8.0",
+    "gatsby-plugin-tslint": "0.0.2",
+    "gatsby-plugin-typescript": "^2.8.0",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-transformer-sharp": "^2.8.0",
+    "gatsby-transformer-typescript-css-modules": "^1.0.14",
     "postcss": "^8.1.14",
     "react": "^16.13.1",
-    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
@@ -49,6 +52,8 @@
     "@storybook/addon-essentials": "^6.1.10",
     "@storybook/addon-links": "^6.1.10",
     "@storybook/react": "^6.1.10",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "babel-loader": "^8.2.2",
     "gh-pages": "^3.1.0"
   }
