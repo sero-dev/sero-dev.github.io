@@ -1,13 +1,13 @@
 :root {
-    --primary: #ff8906;
-    --secondary: #f25f4c;
-    --tertiary: #e53170;
+    --primary: #29648A;
+    --secondary: #2E9CCA;
+    --tertiary: #2E9CCA;
 
     --black: #000000;
-    --off-black: #0f0e17;
-    --dark-gray: #2e2f3e;
-    --gray: #a7a9be;
-    --white: #fffffe;
+    --off-black: #1d1d1d;
+    --dark-gray: #2c2c2c;
+    --gray: #AAABB8;
+    --white: #FFFFFE;
 
     --shadow: rgba(0, 0, 0, 0.7);
 
@@ -24,9 +24,9 @@
     --fz-heading: 32px;
 
     --border-radius: 4px;
-    --navbar-color: rgba(15, 14, 23, 0.7);
+    --navbar-color: rgba(41, 41, 48, 0.6);
     --navbar-height: 70px;
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 ::selection {
