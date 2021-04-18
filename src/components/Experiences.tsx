@@ -7,29 +7,18 @@ const Experiences: React.FC = () => {
 
   const history = [
     {
-      position: "Programmer Analyst",
-      company: "Publix Super Markets",
-      startDate: "November 2020",
-      endDate: "Present",
-      description: [
-        "Lead sprint activities including daily standups, reviews, and product backlog design sessions",
-        "Created UML models and sequence diagrams for other developers to use in upcoming sprints",
-        "Mentored other developers about common design patterns and web standards",
-        "Lead teams for high priority bug fixes or enhancements",
-        "Established a design system for Web and Mobile UIs"
-      ]
-    },
-    {
-      position: "Programmer",
+      position: "Programmer/Programmer Analyst",
       company: "Publix Super Markets",
       startDate: "March 2020",
-      endDate: "October 2020",
+      endDate: "Present",
       description: [
-        "Built dynamic rendered webpages using Telerik UI & Razor Pages inside an ASP.NET Core Web API project.",
-        "Created database diagrams for pre-existing data to be migrated to a normalized database to increase server, performance and data integrity, as well as documented table data.",
-        "Modified pre-existing code inside the Data layer to leverage Entity Framework Core to incorporate new database schemes into the web application.",
-        "Created unit tests using XUnit and Moq to provide coverage for written code",
-        "Migrated microservices from .NET Core 2.2 to 3.1",
+        "Implemented proof of concepts for API Health Checks, and Kafka",
+        "Containerized microservices for local development and testing using Docker",
+        "Designed UML models and Sequence Diagrams to document and communicate design of features",
+        "Built webpages using Telerik UI & Razor Pages and mobile application using Xamarin",
+        "Created normalized tables for the existing system to increase integrity and reduce redundancy",
+        "Developed the Persistence layer for a service using Entity Framework Core with a SQL Server",
+        "Improved pull requests process by creating PR templates, rules, and pipelines for continuous integration",
       ]
     },
     {
@@ -38,10 +27,13 @@ const Experiences: React.FC = () => {
       startDate: "September 2018",
       endDate: "March 2020",
       description: [
-        "Leading web development staff and have supervisory responsibilities over all employees",
-        "Designed, developed, and deployed the company’s initial website using HTML, Bootstrap, and Sass",
-        "Migrating current site to JAMStack architecture using React, Gatsby, Netlify, and Contentful CMS",
-        "Implementing continuous integration and deployment by utilizing Contentful’s webhooks with Netlify to improve site maintenance for Marketing and Development teams."
+        "Built complex functional UI components using React Hooks, Bootstrap, and Styled Components",
+        "Proposed using GatsbyJS to create static sites to improve site performance and scalability",
+        "Connected GatsbyJS with Contentful’s CMS to query data using GraphQL for non-developer use",
+        "Created 3D Scene for the landing page using Three.js with custom interactive controls",
+        "Mentored other developers on best practices in functional and class components, and lifecycles",
+        "Collaborated with UI/UX team to create the new design for the landing page",
+        "Established CI/CD in Netlify using Contentful’s webhooks and GitHub code changes to trigger build/deploy actions"
       ]
     },
   ]
