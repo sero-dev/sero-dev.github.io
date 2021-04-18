@@ -32,10 +32,10 @@
 .navbar-link {
     padding: 0.5rem;
     transition: var(--transition);
-    font-size: var(--fz-xs);
+    font-size: var(--fz-sm);
     font-family: var(--secondary-font);
 }
 
 .navbar-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
 }
