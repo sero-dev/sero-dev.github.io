@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -53,10 +53,10 @@ const Navigation : React.FC = () => {
       <nav className={classes.nav}>
         <Link className={classes.navLink} to={"/"}>SERO-Dev</Link>
         <ul className={classes.navList}>
-          <li className={classes.navItem}><Link className={classes.navLink} to={"#about"}>About</Link></li>
-          <li className={classes.navItem}><Link className={classes.navLink} to={"#experience"}>Experience</Link></li>
-          <li className={classes.navItem}><Link className={classes.navLink} to={"#projects"}>Projects</Link></li>
-          <li className={classes.navItem}><Link className={classes.navLink} to={"#contact"}>Contact</Link></li>
+          <Typography className={classes.navItem} component='li'><Link className={classes.navLink} to={"#about"}>About</Link></Typography>
+          <Typography className={classes.navItem} component='li'><Link className={classes.navLink} to={"#experience"}>Experience</Link></Typography>
+          <Typography className={classes.navItem} component='li'><Link className={classes.navLink} to={"#projects"}>Projects</Link></Typography>
+          <Typography className={classes.navItem} component='li'><Link className={classes.navLink} to={"#contact"}>Contact</Link></Typography>
         </ul>
       </nav>
     </header>

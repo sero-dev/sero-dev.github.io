@@ -1,5 +1,5 @@
 import * as React from 'react'; 
-import { makeStyles } from '@material-ui/core';
+import { Button, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -44,16 +44,16 @@ const Hero: React.FC = () => {
 
   return (
     <section className={classes.root}>
-      <h3 className={classes.introText}>Hi, my name is</h3>
-      <h1 className={`${classes.nameText} ${classes.mainText}`}>
+      <Typography className={classes.introText} component='h3'>Hi, my name is</Typography>
+      <Typography className={`${classes.nameText} ${classes.mainText}`} component='h1'>
         Sean Rodriguez
-      </h1>
-      <h1 className={classes.mainText}>Full-Stack Software Engineer</h1>
-      <p className={classes.subHeroText}>
+      </Typography>
+      <Typography className={classes.mainText} component='h1'>Full-Stack Software Engineer</Typography>
+      <Typography className={classes.subHeroText} component='p'>
         I'm a full-stack software engineer based in <strong>Central Florida</strong> specializing in building systems and applications, and everything in between.
-      </p>
+      </Typography>
 
-      <button>Try me out!</button>
+      <Button color='primary' size='large' variant='contained'>Try me out!</Button>
     </section>
   );
 };

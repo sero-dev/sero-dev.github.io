@@ -1,10 +1,11 @@
+import { Typography } from '@material-ui/core';
 import * as React from 'react'
 
 const Contact: React.FC = () => {
 
   return (
     <section id="contact">
-      <h2>Get In Touch</h2>
+      <Typography variant='h5' component='h2'>Get In Touch</Typography>
     </section>
   )
 }

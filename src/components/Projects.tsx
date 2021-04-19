@@ -1,10 +1,11 @@
 import * as React from 'react'
+import { Typography } from '@material-ui/core';
 
 const Projects: React.FC = () => {
 
   return (
     <section id="projects">
-      <h2>What I've Built</h2>
+      <Typography variant='h2' component='h2'>What I've Built</Typography>
     </section>
   )
 }

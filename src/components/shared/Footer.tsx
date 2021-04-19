@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   const classes = useStyles();
   return (
     <footer className={classes.root}>
-      <p>Design and Built by Sean Rodriguez</p>
+      <Typography variant='body2' component='p'>Design and Built by Sean Rodriguez</Typography>
     </footer>
   );
 };

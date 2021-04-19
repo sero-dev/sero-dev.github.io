@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -25,13 +25,13 @@ interface PropTypes {
 const Experience: React.FC<PropTypes> = ({job}) => {
   const classes = useStyles();
   const descriptionItems = job.description.map(description => {
-    return <li>{description}</li>
+    return <Typography variant='body1' component='li'>{description}</Typography>
   })
 
   return (
     <div className={classes.root}>
-      <h3>{job.position}</h3>
-      <p>{job.startDate} - {job.endDate}</p>
+      <Typography variant='h6' component='h3'>{job.position}</Typography>
+      <Typography variant='body1' component='p'>{job.startDate} - {job.endDate}</Typography>
       <ul className={classes.descriptionList}>
         {descriptionItems}
       </ul>

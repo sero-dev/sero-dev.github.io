@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Experience from './Experience';
-import { Grid, makeStyles } from '@material-ui/core';
+import { Grid, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   header: {
@@ -78,12 +78,23 @@ const Experiences: React.FC = () => {
     let isActiveJob = activeJob === index;
     let cssClasses = isActiveJob ? `${classes.jobListItem} ${classes.jobListItemActive}` : classes.jobListItem;
 
-    return <li onClick={() => setActiveJob(index)} className={cssClasses}>{job.company}</li>
+    return (
+      <Typography 
+          variant='body1' 
+          component='li' 
+          onClick={() => setActiveJob(index)} 
+          className={cssClasses}>
+        {job.company}
+      </Typography>
+    )
   });
 
   return (
     <section id="experience">
-      <h2 className={classes.header}>Where I've Worked</h2>
+      <Typography className={classes.header} variant='h5' component='h2'>
+        Where I've Worked
+      </Typography>
+      
       <Grid container spacing={4}>
         <Grid item xs={3}>
           <ul className={classes.jobList}>{jobs}</ul>
