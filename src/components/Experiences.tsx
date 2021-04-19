@@ -1,9 +1,12 @@
 import * as React from 'react';
 import Experience from './Experience';
-import { col3, col9, mb3, row } from 'bootstrap/dist/css/bootstrap-grid.css';
-import { makeStyles } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
+  header: {
+    marginTop: '1rem'
+  },
+
   jobList: {
     listStyle: 'none'
   },
@@ -80,15 +83,15 @@ const Experiences: React.FC = () => {
 
   return (
     <section id="experience">
-      <h2 className={mb3}>Where I've Worked</h2>
-      <div className={row}>
-        <div className={col3}>
+      <h2 className={classes.header}>Where I've Worked</h2>
+      <Grid container spacing={4}>
+        <Grid item xs={3}>
           <ul className={classes.jobList}>{jobs}</ul>
-        </div>
-        <div className={col9}>
+        </Grid>
+        <Grid item xs={9}>
           <Experience job={history[activeJob]} />
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </section>
   )
 }

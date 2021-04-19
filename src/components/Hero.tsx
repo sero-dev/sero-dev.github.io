@@ -1,5 +1,5 @@
+import * as React from 'react'; 
 import { makeStyles } from '@material-ui/core';
-import * as React from 'react';
 
 const useStyles = makeStyles({
   root: {

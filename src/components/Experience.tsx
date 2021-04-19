@@ -1,5 +1,16 @@
 import * as React from 'react';
-import { mt2, mt4, pl3 } from 'bootstrap/dist/css/bootstrap-grid.css';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles({
+  root: {
+    marginTop: '0.5rem'
+  },
+
+  descriptionList: {
+    marginTop: '1.5rem',
+    paddingLeft: '1rem'
+  }
+});
 
 interface PropTypes {
   job: {
@@ -12,15 +23,16 @@ interface PropTypes {
 }
 
 const Experience: React.FC<PropTypes> = ({job}) => {
+  const classes = useStyles();
   const descriptionItems = job.description.map(description => {
     return <li>{description}</li>
   })
 
   return (
-    <div className={mt2}>
+    <div className={classes.root}>
       <h3>{job.position}</h3>
       <p>{job.startDate} - {job.endDate}</p>
-      <ul className={`${mt4} ${pl3}`}>
+      <ul className={classes.descriptionList}>
         {descriptionItems}
       </ul>
     </div>

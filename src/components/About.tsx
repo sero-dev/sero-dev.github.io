@@ -1,13 +1,13 @@
-import * as React from 'react'
-import { col, row } from 'bootstrap/dist/css/bootstrap-grid.css';
+import * as React from 'react';
+import { Grid } from '@material-ui/core';
 
 const About: React.FC = () => {
 
   return (
     <section id="about">
       <h2>About The Panda</h2>
-      <div className={row}>
-        <div className={col}>
+      <Grid container justify='center' spacing={4}>
+        <Grid item xs={6}>
           <p>
             My name is Sean Rodriguez, also known as <strong>The Big Panda</strong>.
             <br/><br/>
@@ -15,11 +15,11 @@ const About: React.FC = () => {
             <br/><br/>
             Shortly after graduating from <strong>Queens College</strong>, I joined the development team at <strong>Publix Super Markets</strong>. Currently, I am a Programmer Analyst where I lead a Scrum Team to produce an Inventory solution using a microservice architecture.
           </p>
-        </div>
-        <div className={col}>
+        </Grid>
+        <Grid item xs={6}>
           <img src="https://picsum.photos/500/400" />
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </section>
   )
 }
