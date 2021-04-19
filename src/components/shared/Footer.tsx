@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
   const classes = useStyles();
   return (
     <footer className={classes.root}>
-      <Typography variant='body2' component='p'>Design and Built by Sean Rodriguez</Typography>
+      <Typography variant='body2' component='p'>
+        Design and Built by Sean Rodriguez
+      </Typography>
     </footer>
   );
 };
