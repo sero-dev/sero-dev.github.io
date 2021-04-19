@@ -1,9 +1,40 @@
 import * as React from 'react';
-import { jobList, jobListItem, jobListItemActive } from '../styles/Experiences.module.css';
 import Experience from './Experience';
 import { col3, col9, mb3, row } from 'bootstrap/dist/css/bootstrap-grid.css';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles({
+  jobList: {
+    listStyle: 'none'
+  },
+
+  jobListItem: {
+    padding: '0.5rem 0.75rem',
+    margin: '0.5rem',
+    borderRadius: 'var(--border-radius)',
+    transition: 'var(--transition)',
+    cursor: 'pointer',
+    '&::selection': {
+      background: 'none',
+      color: 'inherit'
+    },
+    '&:hover': {
+      background: 'var(--dark-gray)'
+    }
+  },
+
+  jobListItemActive: {
+    background: 'var(--primary)',
+    color: 'var(--white)',
+    '&:hover': {
+      background: 'var(--primary)',
+      color: 'var(--white)'
+    }
+  }
+});
 
 const Experiences: React.FC = () => {
+  const classes = useStyles();
 
   const history = [
     {
@@ -36,23 +67,23 @@ const Experiences: React.FC = () => {
         "Established CI/CD in Netlify using Contentful’s webhooks and GitHub code changes to trigger build/deploy actions"
       ]
     },
-  ]
+  ];
 
   const [activeJob, setActiveJob] = React.useState(0);
 
   const jobs = history.map((job, index) => {
     let isActiveJob = activeJob === index;
-    let cssClasses = isActiveJob ? `${jobListItem} ${jobListItemActive}` : jobListItem;
+    let cssClasses = isActiveJob ? `${classes.jobListItem} ${classes.jobListItemActive}` : classes.jobListItem;
 
     return <li onClick={() => setActiveJob(index)} className={cssClasses}>{job.company}</li>
-  })
+  });
 
   return (
     <section id="experience">
       <h2 className={mb3}>Where I've Worked</h2>
       <div className={row}>
         <div className={col3}>
-          <ul className={jobList}>{jobs}</ul>
+          <ul className={classes.jobList}>{jobs}</ul>
         </div>
         <div className={col9}>
           <Experience job={history[activeJob]} />
